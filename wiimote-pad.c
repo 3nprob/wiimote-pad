@@ -274,7 +274,7 @@ static int wiimote_poll(struct wiimote_dev *dev)
 			wiimote_key(dev, &ev);
 			break;
 		case XWII_EVENT_ACCEL:
-			wiimote_accel(dev, &ev);
+			// wiimote_accel(dev, &ev);
 			break;
 		default:
 			printf("Unhandled Wiimote event type %d\n", ev.type);
